@@ -31,7 +31,7 @@ def process_image():
         body = MultipartEncoder(
             fields={
                 "code": 200,
-                "message": "다신 안해 병신짓",
+                "message": "hi",
                 "trashAnalyzeImage": (os.path.basename(filename), open(filename, 'rb'), 'image'),
                 "trashInfoList": label_names
             }
